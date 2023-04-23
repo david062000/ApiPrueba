@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "accountNumber": "585545",
+  "accountType": "Corriente",
+  "initialBalance": 1000,
+  "currentBalance": 1000,
+  "status": true,
+  "client": {
+    "id": 1
+  }
+}

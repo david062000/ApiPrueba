@@ -1,0 +1,21 @@
+Levantar contenedor de mysql:
+1. docker pull mysql
+2. docker run -d -p 13306:3306 --name mysql_container -e MYSQL_ROOT_PASSWORD=secret mysql:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+3. docker exec -it mysql_container mysql -uroot -p
+password: secret
+4. create user 'mysqluser' identified by 'secret';
+5. grant all privileges on *.* to 'mysqluser'@'%';
+6. exit
+------
+7. docker network create --driver bridge my-net
+8. docker network disconnect bridge mysql_container
+9. docker network connect my-net mysql_container
+10. docker network inspect my-net
+-----------
+11. Crear contenedor para el api:
+12. gradlew bootJar
+
+13. docker build -t pichincha/transactions_service:V1 .
+14. docker images
+15. docker run --network my-net -d -p 18080:8080 --name transactions_container 1721c171ab28
+16. docker logs -f transactions_container

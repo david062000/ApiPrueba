@@ -1,0 +1,678 @@
+{
+	"info": {
+		"_postman_id": "59cf7fca-031c-462c-a70a-ea1c74eb73a5",
+		"name": "Pichincha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"00000002\",\r\n    \"name\": \"Marianela Montalvo\",\r\n    \"gender\": \"F\",\r\n    \"age\": 27,\r\n    \"telephone\": \"097548965\",\r\n    \"clientId\": \"0000000002\",\r\n    \"password\": \"5678\",\r\n    \"status\": true,\r\n    \"address\": \"Amazonas y NNUU\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/clientes/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"clientes",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"12345678\",\r\n    \"name\": \"Hola\",\r\n    \"gender\": \"M\",\r\n    \"age\": \"23\",\r\n    \"telephone\": \"1234567\",\r\n    \"clientId\": \"1234567891\",\r\n    \"password\": \"12345678\",\r\n    \"status\": \"A\",\r\n    \"address\": \"Calle5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/clientes/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"clientes",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/clientes/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"clientes",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/clientes/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"clientes",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/clientes/read/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"clientes",
+								"read",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"495878\",\r\n    \"accountType\": \"Ahorros\",\r\n    \"initialBalance\": 0,\r\n    \"currentBalance\": 0,\r\n    \"status\": true,\r\n    \"client\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/cuentas/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"cuentas",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"12345678911234567892\",\r\n    \"accountType\": \"01\",\r\n    \"initialBalance\": \"1000\",\r\n    \"status\": \"d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/cuentas/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"cuentas",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/cuentas/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"cuentas",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/cuentas/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"cuentas",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/cuentas/read/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"cuentas",
+								"read",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2023-21-04\",\r\n    \"motionType\": \"R\",\r\n    \"value\": 540,\r\n    \"accounts\": {\r\n        \"id\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/movimientos/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"movimientos",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2023-12-04\",\r\n    \"motionType\": \"03\",\r\n    \"value\": \"10000.0\",\r\n    \"balance\": \"10000.0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/movimientos/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"movimientos",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/movimientos/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"movimientos",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/movimientos/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"movimientos",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/movimientos/read/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"movimientos",
+								"read",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reportes",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/vnd.transactions.v1+json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:18080/application/pichincha/movimientos/reportes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "18080",
+							"path": [
+								"application",
+								"pichincha",
+								"movimientos",
+								"reportes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

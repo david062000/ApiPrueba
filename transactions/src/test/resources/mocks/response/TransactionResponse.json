@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "date": "2024-09-04T00:00:00.000-05:00",
+  "motionType": "R",
+  "value": 575.0,
+  "balance": 1425.0,
+  "accounts": {
+    "id": 1,
+    "accountNumber": "478758",
+    "accountType": "Ahorro",
+    "initialBalance": 2000.0,
+    "status": true,
+    "currentBalance": 1425.0,
+    "client": {
+      "id": 1,
+      "identification": "00000001",
+      "name": "Jose Lema",
+      "gender": "M",
+      "age": 23,
+      "address": "Otavalo sn y principal",
+      "telephone": "098254785",
+      "clientId": "1234567891",
+      "password": "1234",
+      "status": true
+    }
+  }
+}
